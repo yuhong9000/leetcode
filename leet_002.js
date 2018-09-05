@@ -30,7 +30,6 @@ var addTwoNumbers = function(l1, l2) {
 };
 
 const addThreeNumbers = (l1,l2,carry) => {
-
     if(l1 === null & l2 === null){
         if(carry === 1){
             return new ListNode(1);
