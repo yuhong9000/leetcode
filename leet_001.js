@@ -18,11 +18,14 @@ return [0, 1].
  * @return {number[]}
  */
 var twoSum = function(nums, target) {
-    for(let index_one = 0; index_one < nums.length-1; index_one++){
-        for(let index_two = index_one+1; index_two < nums.length; index_two++){
-            if(nums[index_one] + nums[index_two] === target){
-                return [index_one,index_two];
-            }
+    const map = {};
+
+    for(let index = 0; index < nums.length; index++){
+        if(nums[index] in map){
+            return [map[nums[index]],index];
+        }
+        else{
+            map[target-nums[index]] = index;
         }
     }
 };
