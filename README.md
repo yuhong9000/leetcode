@@ -6,8 +6,8 @@ My solutions to leetcode problems
 **890** Find and Replace Pattern
 
 ## Tree traversal
-**094** Binary Tree Inorder Traversal (Iterative)  
-**105** Construct Binary Tree from Preorder and Inorder Traversal (Recursion)
+**094** Binary Tree Inorder Traversal (**Iterative**)
+**105** Construct Binary Tree from Preorder and Inorder Traversal (**Recursion**)
 
 ## Recursion
 **046** Permutations
