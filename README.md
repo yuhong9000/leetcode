@@ -7,7 +7,7 @@ My solutions to leetcode problems
 
 ## Tree traversal
 **094** Binary Tree Inorder Traversal (Iterative)  
-**105** Construct Binary Tree from Preorder and Inorder Traversal
+**105** Construct Binary Tree from Preorder and Inorder Traversal (Recursion)
 
 ## Recursion
 **046** Permutations
