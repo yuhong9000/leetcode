@@ -27,6 +27,10 @@ The longest substring is "ababb", as 'a' is repeated 2 times and 'b' is repeated
  * @param {number} k
  * @return {number}
  */
+ // Time is O(n), each iteration is O(n),
+ // worst case number of iterations is the number of different characters because
+ // each iteration removes one character.
+ // Space is O(n) using queue of strings
 var longestSubstring = function(s, k) {
     let queue = [s];
     let max = 0;
