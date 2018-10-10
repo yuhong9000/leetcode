@@ -24,4 +24,5 @@ My solutions to leetcode problems
 ## Dynamic Programming
 **053** Maximum Subarray
 **055** Jump Game
+**062** Unique Paths
 **070** Climbing Stairs
