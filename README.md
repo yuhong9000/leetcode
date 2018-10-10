@@ -22,4 +22,6 @@ My solutions to leetcode problems
 **395** Longest Substring with At Least K Repeating Characters
 
 ## Dynamic Programming
+**053** Maximum Subarray
+**055** Jump Game
 **070** Climbing Stairs
