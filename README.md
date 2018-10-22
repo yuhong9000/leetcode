@@ -13,6 +13,7 @@ My solutions to leetcode problems
 ## Recursion
 **046** Permutations
 **047** Permutations II
+**051** N-Queens (**BackTracing**)
 
 ## XOR
 **268** Missing Number  
