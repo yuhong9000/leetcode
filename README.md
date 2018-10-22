@@ -12,6 +12,7 @@ My solutions to leetcode problems
 
 ## Recursion
 **046** Permutations
+**047** Permutations II
 
 ## XOR
 **268** Missing Number  
