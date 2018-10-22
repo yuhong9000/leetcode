@@ -16,25 +16,21 @@ Output:
   [3,2,1]
 ]
 */
-/**
- * @param {number[]} nums
- * @return {number[][]}
- */
-var permute = function(nums) {
-    const results = [];
-    getPermutation([],nums,results);
-    return results;
-};
+ /**
+  * @param {number[]} nums
+  * @return {number[][]}
+  */
+ const permute = function(nums) {
+     const result = [];
+     permuteUtil([],nums,result);
+     return result;
+ };
 
-const getPermutation = function(left,right,results){
-    if (right.length === 0) {
-        results.push(left.slice());
-        return;
-    }
-
-    for(let i = 0; i < right.length; i++){
-        let temp = left.slice();
-        temp.push(right[i]);
-        getPermutation(temp,right.slice(0,i).concat(right.slice(i+1,right.length)),results);
-    }
-}
+ const permuteUtil = function(left,right,result){
+     if(right.length <= 1){
+         return result.push(left.concat(right));
+     }
+     for(let i = 0; i < right.length; i++){
+         permuteUtil(left.concat(right[i]),[...right.slice(0,i),...right.slice(i+1,right.length)],result);
+     }
+ }
