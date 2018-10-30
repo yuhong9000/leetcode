@@ -31,4 +31,5 @@ My solutions to leetcode problems
 **322** Coin Change
 
 ## Binary Search
+Search Space : index vs range
 **287** Find the Duplicate
