@@ -29,3 +29,6 @@ My solutions to leetcode problems
 **062** Unique Paths
 **070** Climbing Stairs
 **322** Coin Change
+
+## Binary Search
+**287** Find the Duplicate
