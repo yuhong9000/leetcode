@@ -32,4 +32,5 @@ My solutions to leetcode problems
 
 ## Binary Search
 Search Space : index vs range
+**153** Find Minimum in Rotated Sorted Array
 **287** Find the Duplicate
