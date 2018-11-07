@@ -22,18 +22,53 @@ A linked list can be reversed either iteratively or recursively. Could you imple
  * @param {ListNode} head
  * @return {ListNode}
  */
+// var reverseList = function(head) {
+//     if(head === null)
+//         return null;
+//     let current_node = head;
+//     let next_node = current_node.next;
+//     let next_next_node;
+//     while(next_node !== null){
+//         next_next_node = next_node.next
+//         next_node.next = current_node
+//         current_node = next_node
+//         next_node = next_next_node
+//     }
+//     head.next = null;
+//     return current_node;
+// };
+
 var reverseList = function(head) {
-    if(head === null)
-        return null;
-    let current_node = head;
-    let next_node = current_node.next;
-    let next_next_node;
-    while(next_node !== null){
-        next_next_node = next_node.next
-        next_node.next = current_node
-        current_node = next_node
-        next_node = next_next_node
+
+    const reverseUtil = (head,prev) => {
+        if(head === null)
+            return prev;
+
+        const next = head.next;
+        head.next = prev;
+        return reverseUtil(next,head);
     }
-    head.next = null;
-    return current_node;
+
+    const reverseIterative = (head) => {
+      if(!head){
+        return null
+      }
+
+      if(!head.next){
+        return head
+      }
+
+      let current = head;
+      let previous= null;
+      let next = null;
+
+      while(current){
+       next = current.next;
+       current.next = previous;
+       previous = current;
+       current = next;
+      }
+      return previous
+    }
+    return reverseUtil(head,null);
 };
