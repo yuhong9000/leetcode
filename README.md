@@ -19,10 +19,11 @@ My solutions to leetcode problems
 **268** Missing Number  
 **389** Find the Difference
 
-## Sliding Window
+## Sliding Window / Two Pointers
 **003** Longest Substring Without Repeating Characters  
 **076** Minimum Window Substring
 **395** Longest Substring with At Least K Repeating Characters
+**487** Max Consecutive Ones II
 
 ## Dynamic Programming
 **053** Maximum Subarray
